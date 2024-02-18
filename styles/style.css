@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
+
+:root {
+  --primary: #FFF7E4;
+  --secondary: #191716;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0
+}
+
+* {
+  font-family: "Lexend", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  overflow-y: scroll;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.nameheading {
+  font-size: 5vw;
+  margin-bottom: 0.3vw;
+}
+
+.namesubheading {
+  font-size: 3vw;
+  margin-top: 0.3vw;
+  width: 60vw;
+}
+
+.fp_container {
+  background: var(--secondary);
+  margin: 0;
+  display: flex;
+  color: var(--primary);
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 100vh;
+}
+
+.fp_container>* {
+  transition: transform 0.2s;
+}
+
+.fp_container>*:hover {
+  transform: translateY(-0.1vh);
+}
+
+.fp_container>*::selection {
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+.about {
+  height: 100vh;
+  background-color: var(--primary);
+  color: var(--secondary);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.portrait{
+  width: 40vw;
+  left: 10vw;
+  padding: 1vw;
+  position: absolute;
+}
+.portrait img{
+border-radius: 1vw;
+width: 25vw;
+filter: drop-shadow(0 0 0.2rem var(--secondary) );
+}
+.about-me {
+  font-size: 2vw;
+  width: 40vw;
+  padding: 1vw;
+  position: absolute;
+  right: 10vw;
+}
+
+.about *::selection {
+  color: var(--primary);
+  background-color: var(--secondary);
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portrait, .about-me {
+    width: 80vw;
+    left: 10vw; 
+    right: 10vw; 
+    position: static;
+    margin-bottom: 20px; 
+    margin:auto;
+  }
+  .portrait{
+    text-align: center;
+  }
+  .portrait img{
+  width: 35vw;
+  }
+}
