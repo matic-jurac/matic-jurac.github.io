@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
 
 :root {
-  --primary: #FFF7E4;
-  --secondary: #191716;
+  --primary: #093434;
+  --secondary: #ff6c1e;
 }
 
 body {
@@ -52,15 +52,7 @@ h6 {
   justify-content: center;
   align-items: center;
   text-align: center;
-  height: 100vh;
-}
-
-.fp_container>* {
-  transition: transform 0.2s;
-}
-
-.fp_container>*:hover {
-  transform: translateY(-0.1vh);
+  height: 80vh;
 }
 
 .fp_container>*::selection {
@@ -101,6 +93,15 @@ filter: drop-shadow(0 0 0.2rem var(--secondary) );
 }
 
 @media screen and (max-width: 600px) {
+  .nameheading, .namesubheading{
+    width: 80vw;
+  }
+  .namesubheading{
+    font-size: large;
+  }
+  .nameheading{
+    font-size: xx-large;
+  }
   .about {
     flex-direction: column;
     align-items: center;
@@ -113,11 +114,12 @@ filter: drop-shadow(0 0 0.2rem var(--secondary) );
     position: static;
     margin-bottom: 20px; 
     margin:auto;
+    font-size: large;
   }
   .portrait{
     text-align: center;
   }
   .portrait img{
-  width: 35vw;
+  width: 60vw;
   }
 }
