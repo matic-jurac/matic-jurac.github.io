@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
 
 :root {
-  --primary: #093434;
-  --secondary: #ff6c1e;
+  --primary: #18181b;
+  --secondary: #e5e7eb;
 }
 
 body {
@@ -33,26 +33,29 @@ h6 {
 }
 
 .nameheading {
-  font-size: 5vw;
-  margin-bottom: 0.3vw;
+  font-size: 2vw;
+  left: 12vw;
+  margin-bottom: 3vw;
 }
 
 .namesubheading {
-  font-size: 3vw;
-  margin-top: 0.3vw;
+  font-size: 4vw;
+  left: 15vw;
+  font-weight: 1000;
   width: 60vw;
 }
 
 .fp_container {
   background: var(--secondary);
   margin: 0;
-  display: flex;
+  display: flex; 
   color: var(--primary);
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
   height: 80vh;
+  left: 12vh;
 }
 
 .fp_container>*::selection {
@@ -61,7 +64,7 @@ h6 {
 }
 
 .about {
-  height: 100vh;
+  height: 80vh;
   background-color: var(--primary);
   color: var(--secondary);
   position: relative;
@@ -70,12 +73,12 @@ h6 {
 }
 .portrait{
   width: 40vw;
-  left: 10vw;
+  left: 12vw;
   padding: 1vw;
   position: absolute;
 }
 .portrait img{
-border-radius: 1vw;
+ /* border-radius: 50%; */ 
 width: 25vw;
 filter: drop-shadow(0 0 0.2rem var(--secondary) );
 }
@@ -84,12 +87,38 @@ filter: drop-shadow(0 0 0.2rem var(--secondary) );
   width: 40vw;
   padding: 1vw;
   position: absolute;
-  right: 10vw;
+  right: 12vw;
 }
 
 .about *::selection {
   color: var(--primary);
   background-color: var(--secondary);
+}
+
+.work {
+  height: 80vh;  
+  background-color: var(--secondary);
+  color: var(--primary);
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.my-work {
+  font-size: 2vw;
+  width: 40vw;
+  padding: 1vw;
+  position: absolute;
+  left: 12vw;
+}
+
+.contact {
+  height: 80vh;  
+  background-color: var(--primary);
+  color: var(--secondary);
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 600px) {
@@ -112,7 +141,7 @@ filter: drop-shadow(0 0 0.2rem var(--secondary) );
     left: 10vw; 
     right: 10vw; 
     position: static;
-    margin-bottom: 20px; 
+    margin-bottom: 1.8vh; 
     margin:auto;
     font-size: large;
   }
