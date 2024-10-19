@@ -100,25 +100,58 @@ filter: drop-shadow(0 0 0.2rem var(--secondary) );
   background-color: var(--secondary);
   color: var(--primary);
   position: relative;
-  display: flex;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
+  text-align: center;
 }
 
 .my-work {
+  text-align: justify;
   font-size: 2vw;
   width: 40vw;
   padding: 1vw;
   position: absolute;
   left: 12vw;
 }
-
+.logo {
+  right: 12vw;
+  width: 40vw;
+  position: absolute;
+  padding:1vw;
+}
+.logo>img{
+  width:15vw;
+  filter: drop-shadow(0 0 0.2rem var(--secondary) );
+}
 .contact {
   height: 80vh;  
+  width: 100vw;
   background-color: var(--primary);
   color: var(--secondary);
   position: relative;
   display: flex;
+  justify-content: center;
   align-items: center;
+
+}
+.contact>ul {
+  display: flex;
+  justify-content: space-around;
+  width:80vw;
+}
+ul>li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+li>a {
+  text-decoration: none;
+  font-style: inherit;
+  font-size: 3vw;
+  font-weight: bolder;
+  color:inherit;
 }
 
 @media screen and (max-width: 600px) {
